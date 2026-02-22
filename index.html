@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2048 Evolution</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-panel">
+  <div>Очки: <span id="score">0</span></div>
+  <div>Рекорд: <span id="best">0</span></div>
+  <div>❤️ <span id="lives">3</span></div>
+  <div>💰 <span id="coins">0</span></div>
+</div>
+
+<div class="game" id="game"></div>
+
+<div class="controls">
+  <button onclick="removeTile()">Удалить плитку (50)</button>
+  <button onclick="boostTile()">Удвоить плитку (30)</button>
+  <button onclick="openLoot()">Лутбокс (100)</button>
+</div>
+
+<div class="skins">
+  <button onclick="setTheme('')">Классика</button>
+  <button onclick="setTheme('dark')">Тёмная</button>
+  <button onclick="setTheme('neon')">Неон</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
